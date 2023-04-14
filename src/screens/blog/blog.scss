@@ -1,0 +1,26 @@
+.blog{
+    height: fit-content;
+    display: grid;
+    place-items: center;
+.blog1{
+    background-color: rgb(240, 236, 236);
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    .bo{
+        margin-left: 12px;
+        margin-top: 10px;
+        margin-right: 12px;
+        border: 2px solid #7be67b;
+        border-radius: 3px;
+        margin-bottom: 12px;
+
+        h3{
+            letter-spacing: 2px;
+        }
+
+    }
+}
+
+}
