@@ -44,7 +44,15 @@ border-radius: 10px;
             border-radius: 5px;
             outline: none;
         }
-
+        label{
+            .file{
+                background-color: #7be67b;
+                border-radius: 4px;
+                cursor: pointer;
+                letter-spacing: 4px;
+                padding: 3px;
+            }
+        }
 
     }
     .type{
@@ -68,3 +76,20 @@ border-radius: 10px;
     }
 }
 }
+
+.img{
+    background-color: #7be67b;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    padding: 3px;
+    transform: translateX(-30px);
+
+}
+            input{
+                width: 60%;
+                border: 2px solid #7be67b;
+                border-radius: 5px;
+                outline: none;
+                padding: .3rem;
+            }

@@ -18,13 +18,9 @@ function Home() {
     <>    
       <Navbar/>
       <div className='container'>   
-       <div className='inter'>
+      <div className='inter'>
     <h1 style={{color:'black'}}>Welcome To GreenAgri</h1>
-    <h3 style={{color:'#101820FF'}}>Precision agriculture combines modern technology with an established agricultural sector.
-In order to match the type and quantity of inputs with the actual crop demand
-for a given region of an agricultural field, it is an integrated management system of
-crops. The concept of precision agriculture can now be implemented in a
-real production environment thanks to modern technology.
+    <h3 style={{color:'#101820FF'}}>Our website provides a comprehensive solution for storing and analyzing precision agriculture data. With our user-friendly interface, farmers can easily upload and organize data related to crop yield, soil moisture levels, weather patterns, and more. Our platform allows users to generate reports and graphs that help them make informed decisions about their farming practices.
 </h3>
     </div>
       <Slider  {...setting}  className='slide'>

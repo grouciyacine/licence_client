@@ -1,0 +1,10 @@
+.redaction{
+    background: rgb(48,81,60);
+    background: linear-gradient(90deg, rgba(48,81,60,1) 0%, rgba(72,173,88,1) 53%, rgba(99,212,113,1) 100%);
+    width: 100%;
+    .red{
+        place-items: center;
+        margin: auto;
+        width: 60%;
+    }
+}

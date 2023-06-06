@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './register.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 function Register() {
     const [input,setInput]=useState({
@@ -10,6 +10,7 @@ function Register() {
         last_name:'',
         first_name:'',
     })
+    const navigation=useNavigate()
     const handleChange=(e)=>{
         setInput((prev)=>({...prev,[e.target.name]:e.target.value}))
     }
@@ -19,7 +20,7 @@ function Register() {
             await axios.post('http://127.0.0.1:8000/reg/',input)
             .then((res)=>console.log(res.data))
             .catch((e)=>console.log(e))
-            
+            navigation('/')
         }catch(e){
         console.log(e)
     }
@@ -46,8 +47,8 @@ function Register() {
                 <input type='password' placeholder='Please Enter Your Password' name='password' onChange={handleChange}/>
             </div>
             <div className='user'>
-                <h4>@Email :</h4>
-                <input type='email' placeholder='Please Enter Your Email' name='email' onChange={handleChange}/>
+                <h4>Email :</h4>
+                <input type='email' className='email' placeholder='Please Enter Your Email' name='email' onChange={handleChange}/>
             </div>
             <button onClick={handleClick}>Submit</button>
             <h6>
